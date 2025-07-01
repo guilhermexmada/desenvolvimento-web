@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetição</title>
+</head>
+
+<body>
+    <script>
+        /*
+        for(x=1; x<=3; x++){
+            document.write(x + '<br>');
+            for(y=1;y<=3; y++){
+                document.write('>'+ y + '<br>');
+            }
+        }*/
+
+        universo = prompt("Digite o universo do herói: ").toLocaleLowerCase().replaceAll(" ", "");
+        heroi = prompt("Digite o nome do herói: ").toLocaleLowerCase().trim().replaceAll(" ", "-");
+        qtd = prompt("Digite a quantidade de repetições: ");
+
+        if (universo == "marvel") {
+            for (x = 1; x <= qtd; x++) {
+                if (heroi == "spiderman") {
+                    document.write("<img src='spiderman.jpg'>");
+                } else if (heroi == "black-panther") {
+                    document.write("<img src='black-panther.webp'>");
+                } else if (heroi == "starlord") {
+                    document.write("<img src='starlord.png'>");
+                } else {
+                     document.write("Herói desconhecido ou de outro universo...");
+                     break;
+                }
+            }
+        } else if (universo == "dc") {
+            for (x = 1; x <= qtd; x++) {
+                if (heroi == "batman") {
+                    document.write("<img src='batman.webp'>");
+                } else if (heroi == "superman") {
+                    document.write("<img src='superman.webp'>");
+                } else if (heroi == "wonder-woman") {
+                    document.write("<img src='wonder-woman.webp'>");
+                } else { 
+                     document.write("Herói desconhecido ou de outro universo...");
+                     break; 
+                }
+            }
+        } else {
+            document.write("Universo desconhecido...");
+        }
+    </script>
+</body>
+
+</html>

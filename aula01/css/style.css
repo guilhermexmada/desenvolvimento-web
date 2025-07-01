@@ -1,0 +1,29 @@
+#titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem{
+    width: 1280px;
+    height: 720px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    box-shadow: black 10px 10px 10px;
+}
+
+.tabela{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.linha td{
+    border: 1px solid black;
+}
+

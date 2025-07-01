@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicional</title>
+    <style>
+        .imagem{
+            max-width: 1000px;
+            max-height: 1000px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        heroi = prompt("Digite um super-herói:").toLowerCase();
+
+        if(heroi == "superman"){
+            document.write("<img class='imagem' src='superman.webp'>");
+        } else if (heroi == "batman"){
+            document.write("<img class='imagem' src='batman.webp'>");
+        } else if (heroi == "spiderman"){
+            document.write("<img class='imagem' src='spiderman.jpg'>");
+        } else{
+            alert("Erro! Herói desconhecido...");
+        }
+    </script>
+    
+</body>
+</html>
